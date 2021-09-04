@@ -1,4 +1,5 @@
 
 vscode:
+  extensions:
     - ckolkman.vscode-postgres
     -  mtxr.sqltools
