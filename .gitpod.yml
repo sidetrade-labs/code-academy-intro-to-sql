@@ -1,0 +1,4 @@
+
+vscode:
+    - ckolkman.vscode-postgres
+    -  mtxr.sqltools
