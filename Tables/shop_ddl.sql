@@ -15,7 +15,7 @@ CREATE TABLE $schema_name.customer (
 
 -- @block "order" definition
 
-CREATE TABLE $schema_name.order (
+CREATE TABLE $schema_name."order" (
 	order_id INTEGER,
 	customer_id INTEGER,
 	order_date VARCHAR(10),
