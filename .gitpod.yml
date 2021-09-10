@@ -1,5 +1,5 @@
 
 vscode:
   extensions:
-    - ckolkman.vscode-postgres
     -  mtxr.sqltools
+    -  mtxr.sqltools-driver-pg

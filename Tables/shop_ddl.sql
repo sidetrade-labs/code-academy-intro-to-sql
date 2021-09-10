@@ -1,4 +1,4 @@
--- customer definition
+-- @block customer definition
 
 CREATE TABLE customer (
 	customer_id INTEGER,
@@ -9,7 +9,7 @@ CREATE TABLE customer (
 	city VARCHAR(19)
 );
 
--- "order" definition
+-- @block "order" definition
 
 CREATE TABLE "order" (
 	order_id INTEGER,
@@ -19,7 +19,7 @@ CREATE TABLE "order" (
 	order_status_id INTEGER
 );
 
--- order_line definition
+-- @block order_line definition
 
 CREATE TABLE order_line (
 	order_line_id INTEGER,
@@ -28,14 +28,14 @@ CREATE TABLE order_line (
 	quantity INTEGER
 );
 
--- order_status definition
+-- @block order_status definition
 
 CREATE TABLE order_status (
 	order_status_id INTEGER,
 	status_name VARCHAR(9)
 );
 
--- product definition
+-- @block product definition
 
 CREATE TABLE product (
 	product_id INTEGER,
