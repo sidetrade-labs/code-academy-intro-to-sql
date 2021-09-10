@@ -1,6 +1,10 @@
+-- @block create schema 
+CREATE SCHEMA $schema_name;
+
+
 -- @block customer definition
 
-CREATE TABLE customer (
+CREATE TABLE $schema_name.customer (
 	customer_id INTEGER,
 	customer_name VARCHAR(19),
 	email VARCHAR(40),
@@ -11,7 +15,7 @@ CREATE TABLE customer (
 
 -- @block "order" definition
 
-CREATE TABLE "order" (
+CREATE TABLE $schema_name.order (
 	order_id INTEGER,
 	customer_id INTEGER,
 	order_date VARCHAR(10),
@@ -21,7 +25,7 @@ CREATE TABLE "order" (
 
 -- @block order_line definition
 
-CREATE TABLE order_line (
+CREATE TABLE $schema_name.order_line (
 	order_line_id INTEGER,
 	order_id INTEGER,
 	product_id INTEGER,
@@ -30,14 +34,14 @@ CREATE TABLE order_line (
 
 -- @block order_status definition
 
-CREATE TABLE order_status (
+CREATE TABLE $schema_name.order_status (
 	order_status_id INTEGER,
 	status_name VARCHAR(9)
 );
 
 -- @block product definition
 
-CREATE TABLE product (
+CREATE TABLE $schema_name.product (
 	product_id INTEGER,
 	product_name VARCHAR(17),
 	selling_price REAL,
