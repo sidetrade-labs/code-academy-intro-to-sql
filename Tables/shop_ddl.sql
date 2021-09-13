@@ -6,11 +6,11 @@ CREATE SCHEMA $schema_name;
 
 CREATE TABLE $schema_name.customer (
 	customer_id INTEGER,
-	customer_name VARCHAR(19),
-	email VARCHAR(40),
-	phone_number VARCHAR(12),
-	address_line_1 VARCHAR(33),
-	city VARCHAR(19)
+	customer_name TEXT,
+	email TEXT,
+	phone_number TEXT,
+	address_line_1 TEXT,
+	city TEXT
 );
 
 -- @block "order" definition
@@ -18,7 +18,7 @@ CREATE TABLE $schema_name.customer (
 CREATE TABLE $schema_name."order" (
 	order_id INTEGER,
 	customer_id INTEGER,
-	order_date VARCHAR(10),
+	order_date TEXT,
 	total_amount REAL,
 	order_status_id INTEGER
 );
@@ -36,14 +36,14 @@ CREATE TABLE $schema_name.order_line (
 
 CREATE TABLE $schema_name.order_status (
 	order_status_id INTEGER,
-	status_name VARCHAR(9)
+	status_name TEXT
 );
 
 -- @block product definition
 
 CREATE TABLE $schema_name.product (
 	product_id INTEGER,
-	product_name VARCHAR(17),
+	product_name TEXT,
 	selling_price REAL,
 	cost_price REAL
 );
